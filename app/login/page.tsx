@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 
@@ -12,10 +13,12 @@ export default function Login() {
             <CardDescription>Enter your email below to login in to your account</CardDescription>
           </CardHeader>
           <CardContent>
-            <form>
-              <div>
-                <Label></Label>
+            <form className="flex flex-col gap-y-4">
+              <div className="flex flex-col gap-y-2">
+                <Label>Email</Label>
+                <input placeholder="hello@hello.com" />
               </div>
+              <Button>Submit</Button>
             </form>
           </CardContent>
         </Card>
