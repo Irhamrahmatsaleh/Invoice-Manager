@@ -17,6 +17,8 @@ export default function Login() {
               <div className="flex flex-col gap-y-2">
                 <Label>Email</Label>
                 <input placeholder="hello@hello.com" />
+                <Label>Password</Label>
+                <input />
               </div>
               <Button>Submit</Button>
             </form>
